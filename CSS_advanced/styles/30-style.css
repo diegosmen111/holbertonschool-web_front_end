@@ -293,58 +293,127 @@ color: var(--color-primary);
 }
 
 /* Start of the added styles */
+  .card-category{
+      color: var(--color-primary);
+  }
 
-.card-work .card-outer {
-position: relative;
-overflow: hidden;
+ /**
+  * Description: class card-title that is inside card-services Styles
+  * add margin
+  */
+
+  .card-services .card-title{
+    margin: 0;
 }
 
-.card-work .card-image img {
-height: 30rem;
-width: 100%;
-object-fit: cover;
-vertical-align: bottom;
+ /**
+  * Description: class a that is inside card-services Styles
+  * add display, padding background
+  */
+
+  .card-services a{
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
 }
 
-.card-work .card-inner {
-position: absolute;
-top: -0.1rem;
-left: -0.1rem;
-right: -0.1rem;
-z-index: 1;
+ /**
+  * Description: class a:hover that is inside card-services Styles
+  * add margin
+  */
+
+  .card-services a:hover{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
 }
 
-.card-work:hover .card-inner {
-background-color: rgba(0, 0, 0, 0.7);
+ /**
+  * Description: class card-testimonial Styles
+  * add align text
+  */
+
+  .card-testimonial{
+    text-align: center;
 }
 
-.card-work .card-title {
-text-align: center;
-margin: 0;
-opacity: 0;
+ /**
+  * Description: class card-avatar that is inside the card-testimonial Styles
+  * add border, width and height
+  */
+
+  .card-testimonial .card-avatar{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
 }
 
-.card-work .card-title,.card-work .card-link {
-height: 100%;
-position: relative;
+ /**
+  * Description: <cite> HTML tag which is inside card-quote inside the card-testimonial
+  * add block, padding, color
+  */
+
+  .card-testimonial .card-quote cite{
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary) ;
 }
 
-.card-work .card-link {
-display: block;
+ /**
+  * Description: Card Woks styesm states, and subclasses
+  * add block, padding, color
+  */
+  .card-work .card-outer {
+    position: relative;
+    overflow: hidden;
 }
 
-.card-work .card-link::after {
-content: "";
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
+.card-work .card-image img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 
-.card-work:hover .card-title,.card-work:hover .card-link {
-opacity: 1;
+.card-work .card-inner{
+   position: absolute;
+   top: -0.1rem;
+   left: -0.1rem;
+   right: -0.1rem;
+   z-index: 1;
 }
+
+.card-work:hover .card-inner{
+    background-color: rgba(0, 0, 0, 0.7);
+ }
+
+ .card-work .card-title{
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    height: 100%;
+    position: relative;
+ }
+
+ .card-work .card-title a{
+    display: block;
+    text-decoration: none;
+    padding-top: 45%;
+ }
+
+ .card-work .card-title a::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+ }
+
+ .card-work:hover .card-title{
+    opacity: 1;
+ }
+
 
 /* End of the added styles */
 
