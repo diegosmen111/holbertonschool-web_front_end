@@ -324,8 +324,7 @@ margin: 0;
 opacity: 0;
 }
 
-.card-work .card-title,
-.card-work .card-link {
+.card-work .card-title,.card-work .card-link {
 height: 100%;
 position: relative;
 }
