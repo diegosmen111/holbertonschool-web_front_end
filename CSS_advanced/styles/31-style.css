@@ -207,19 +207,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-services .card-title {
-  margin: 0;
+margin: 0;
 }
 
 .card-services a {
-  display: block;
-  padding: 2rem;
-  background-color: var(--color-light-grey);
+display: block;
+padding: 2rem;
+background-color: var(--color-light-grey);
 }
 
 .card-services a:hover {
-  color: var(--color-white);
-  background-color: var(--color-primary);
- text-decoration: none;
+color: var(--color-white);
+background-color: var(--color-primary);
+text-decoration: none;
 }
 
 .card-testimonial {
@@ -236,6 +236,21 @@ height: 10rem;
 display: block;
 padding-top: 1rem;
 color: var(--color-primary);
+}
+
+/* Added styles for testimonials */
+.card-testimonial .card-quote {
+position: relative;
+}
+
+.card-testimonial .card-quote::before {
+content: "\201C";
+position: absolute;
+top: -4.5rem;
+left: -1rem;
+color: #efeded;
+font-size: 10rem;
+z-index: -1;
 }
 
 :root {
